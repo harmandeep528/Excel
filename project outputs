@@ -1,0 +1,81 @@
+Sheet1:StudentDataEntrySheet
+This sheet contains the following columns:
+1.	RollNumber
+2.	StudentName
+3.	Subject1 Marks
+4.	Subject2 Marks
+5.	Subject3 Marks
+6.	Total Marks
+7.	Percentage
+8.	Grade
+9.	Rank (Optional)
+Formulas Used:
+Total Marks:
+=SUM(C2:E2)
+Percentage:
+=F2/300*100
+GradeFormula:
+=IF(G2>=90,"A+",IF(G2>=75,"A",IF(G2>=60,"B",IF(G2>=50,"C","Fai l"))))
+Rank Formula:
+=RANK(G2,$G$2:$G$21,0)
+Theseformulasareappliedtoallstudentsbydraggingthem down.
+
+
+ 
+Sheet2:Dashboard/SummarySheet
+Thissheetprovidesanoverviewofclassperformance. It includes:
+•	Totalnumberofstudents
+•	Averagepercentage
+•	Highestpercentage
+•	Lowestpercentage
+•	Numberofstudentspassedandfailed
+•	Gradedistribution
+FunctionsUsed:
+Average:
+=AVERAGE(G2:G21)
+Maximum:
+=MAX(G2:G21)
+Minimum:
+=MIN(G2:G21)
+CountofFail Students:
+=COUNTIF(H2:H21,"Fail")
+
+
+ Summary Data (For Dashboard Sheet)						
+Total Students					
+					
+20									
+ Average Percentage										
+72.22%										
+ Highest Percentage					
+					
+95.00%										
+Lowest Percentage									
+37.67%										
+ Grade Distribution										
+Grade	Count				
+A+	4				
+A	6				
+B	6				
+C	3				
+Fail	3																				
+Column No.	Column Name				
+1	Roll No				
+2	Name				
+3	Subject 1				
+4	Subject 2				
+5	Subject 3				
+6	Total				
+7	Percentage				
+8	Grade				
+					
+Column Name							
+A → Roll No									
+B → Name										
+C → Subject 1										
+D → Subject 2									
+E → Subject 3										
+F → Total										
+G → Percentage										
+H → Grade					
+			
